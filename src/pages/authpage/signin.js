@@ -1,11 +1,16 @@
 import { useForm } from 'react-hook-form'
 import './auth.css'
 import Button from '../../components/button'
+
+import { useNavigate } from 'react-router-dom'
+
 const Signin = () => {
     const { register, handleSubmit, formState:{errors}} = useForm()
+    const navigate = useNavigate()
 
     const onsubmit = (data) => {
         console.log(data);
+        navigate('/home')
         
     }
 
