@@ -1,0 +1,17 @@
+.btn {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.btn.signin {
+  background-color: blue;
+}
+
+.btn.signup {
+  background-color: green;
+}

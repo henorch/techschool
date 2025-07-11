@@ -1,25 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './components/button';
+import { Link, Route, Routes } from 'react-router-dom';
+import Signin from './pages/authpage/signin';
+import Signup from './pages/authpage/authpage';
+
+
+
+function HomePage(){
+  return (
+    <div className="App">
+      <h1>Welcome to Henorch Alliance</h1>
+      <p>We transform and recreate</p>
+      <Link to='/signin'> <Button btnname='sign in'  type="signin"/></Link>
+      <Link to='/signup'> <Button btnname='sign up'  type="signup"/> </Link>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<HomePage/>}/>
+      <Route path="/signin" element={<Signin/>}/>
+      <Route path="signup" element={<Signup/>}/>
+    </Routes>
+  )
 }
 
 export default App;
