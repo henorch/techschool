@@ -1,0 +1,8 @@
+.phase , .topics , .practices{
+    font-size: 2.0rem;
+    padding: 1rem;
+}
+
+.topics, .practices {
+    font-size: 1rem;
+}

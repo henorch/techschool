@@ -1,5 +1,5 @@
 .main{
-    width: 100%;
+    min-width: 100vw;
     height:10vh;
     box-shadow: 2px 2px 2px gray;
     display: flex;
@@ -26,7 +26,7 @@ a{
     font-weight: bold;
 }
 
-.btn{
+.main .btn{
    background-color: white;
    width:40px;
    color: blue;
@@ -42,7 +42,7 @@ a{
 }
 
 @media screen and (min-width: 768px) {
-  .btn{
+  .main .btn{
     display: none;
   }
 }

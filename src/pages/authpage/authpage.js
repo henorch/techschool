@@ -25,7 +25,11 @@ const Signup = () => {
 
             <input {...register("password", {required:true})} placeholder='password'/>
             {errors.password  && <span>password is required</span>}
-            <Button type='signin' btnname='submit'/>
+           
+            <Button type='signup' btnname='submit'/>
+                        <p>New to Henorch Alliance Tech?</p>
+            <Button type='signin' btnname='Login'/>
+        
         </form>
     )
 }
